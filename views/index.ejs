@@ -1,0 +1,8 @@
+<% if (typeof image !== 'undefined') { %>
+  <img width="300" src="/<%= image %>" style="margin: 30px">
+<% } %>
+
+<form action="/upload" enctype="multipart/form-data" method="POST">
+  <input type="file" name="image">
+  <input type="submit">
+</form>
